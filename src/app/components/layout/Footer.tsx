@@ -1,8 +1,9 @@
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
-        <div>
-            footer
-        </div>
+        <footer className="text-center">
+            © {currentYear} Slippage Tracker. All rights reserved.
+        </footer>
     );
 };
 
