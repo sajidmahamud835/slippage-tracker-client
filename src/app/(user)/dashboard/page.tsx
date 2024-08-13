@@ -1,6 +1,9 @@
+"use client"
 import DashboardCards from '@/app/components/DashboardCards'
 import DashboardTabs from '@/app/components/DashboardTabs';
 import { NextPage } from 'next'
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 interface Props { }
 
@@ -12,7 +15,16 @@ const cardsData = [
 ];
 const Dashboard: NextPage<Props> = ({ }) => {
     return <div>
-        <h1>Dashboard</h1>
+        <div className='d-flex justify-content-between my-3'><h1>Dashboard</h1><div><DropdownButton
+            align="end"
+            title="A1"
+            id="dropdown-menu-align-end"
+        >
+            <Dropdown.Item eventKey="1">A1</Dropdown.Item>
+            <Dropdown.Item eventKey="2">A2</Dropdown.Item>
+            <Dropdown.Item eventKey="3">A3</Dropdown.Item>
+            <Dropdown.Item eventKey="4">A4</Dropdown.Item>
+        </DropdownButton></div></div>
         <DashboardTabs />
         <DashboardCards cards={cardsData} />
     </div>
