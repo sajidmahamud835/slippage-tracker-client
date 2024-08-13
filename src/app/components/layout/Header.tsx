@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
     return (
-        <div>
+        <nav>
             <Navbar bg="primary" data-bs-theme="dark">
                 <Container>
                     <Navbar.Brand href="#home">Slippage Tracker</Navbar.Brand>
@@ -16,7 +16,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </nav>
     );
 };
 
