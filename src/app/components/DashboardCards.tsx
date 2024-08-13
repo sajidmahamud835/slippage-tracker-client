@@ -15,7 +15,7 @@ interface Props {
 
 const DashboardCards: NextPage<Props> = ({ cards }) => {
     return (
-        <div>
+        <div className="mt-3">
             <Row xs={1} md={2} className="g-4">
                 {cards.map((card, idx) => (
                     <Col key={idx}>

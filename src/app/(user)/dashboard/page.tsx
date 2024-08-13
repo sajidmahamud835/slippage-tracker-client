@@ -1,4 +1,5 @@
 import DashboardCards from '@/app/components/DashboardCards'
+import DashboardTabs from '@/app/components/DashboardTabs';
 import { NextPage } from 'next'
 
 interface Props { }
@@ -12,6 +13,7 @@ const cardsData = [
 const Dashboard: NextPage<Props> = ({ }) => {
     return <div>
         <h1>Dashboard</h1>
+        <DashboardTabs />
         <DashboardCards cards={cardsData} />
     </div>
 }
