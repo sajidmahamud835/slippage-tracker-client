@@ -20,5 +20,27 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  ,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajidmahamud835/slippage-tracker-client.git"
+  },
+  "keywords": [
+    "slippage",
+    "slippage",
+    "tracker",
+    "mt5",
+    "mt4",
+    "ea",
+    "expart",
+    "advisors"
+  ],
+  "author": "sajidmahamud835",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sajidmahamud835/slippage-tracker-client/issues"
+  },
+  "homepage": "https://github.com/sajidmahamud835/slippage-tracker-client#readme"
 }
