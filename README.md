@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# 📉 Slippage Tracker Client — Execution Quality Monitor
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-13-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**A purpose-built analytical dashboard for visualizing trade execution latency and price slippage across Forex brokers.**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*Analytical • Real-time • Data-Driven*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Report Bug](https://github.com/sajidmahamud835/slippage-tracker-client/issues) · [Request Feature](https://github.com/sajidmahamud835/slippage-tracker-client/issues)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+</div>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔬 About The Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Slippage Tracker Client** provides the visualization layer for a broader research initiative into **Broker Execution Quality**. In high-frequency and algorithmic trading (like the strategies employed in *MarketSync-EA*), "slippage"—the difference between expected and executed price—can erode potential alpha significantly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This frontend application consumes data from trading terminals to present a clear, actionable dashboard. It allows researchers and traders to audit their broker's performance, identifying liquidity gaps and potential manipulation.
 
-## Deploy on Vercel
+### 🎯 Key Implementations
+1.  **Data Visualization**: Rendering complex time-series data of trade fills versus requested prices.
+2.  **Authentication**: Secure user access to private trading history.
+3.  **Component Architecture**: Modular design using Next.js App Router for server-side optimization of initial data loads.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ⚙️ Technical Architecture
+
+The client is built using the specific advantages of Next.js 14:
+
+-   **Routing**: App Router using `(user)` groups for protected dashboard routes.
+-   **Styling**: utility-first CSS with Tailwind for rapid, consistent layout development.
+-   **State Management**: React Hooks handling client-side interactions within the dashboard components.
+
+---
+
+## ✨ Features
+
+### 🟢 Implemented Capabilities
+
+| Component | Feature Description |
+|-----------|---------------------|
+| **Dashboard** | Comprehensive view of account metrics (Positive/Negative Slippage) |
+| **Login portal** | Secure entry point for authorized users |
+| **Interactive Tabs** | Easy switching between different accounts or timeframe views |
+| **Responsive Design** | Optimized for desktop analysis and mobile checking |
+
+### 🗓️ Research & Development Plan (Todo)
+
+- [ ] **Chart.js Integration**: Replace tabular data with visual scatter plots showing slippage distribution.
+- [ ] **Real-time WebSockets**: Upgrade from static fetching to live streaming of trade events as they happen.
+- [ ] **Export Functionality**: Ability to download CSV reports for external analysis in Python/Pandas.
+- [ ] **Broker Comparison**: Feature to overlay execution data from multiple sources side-by-side.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+-   **Node.js**: v18.0 or higher
+-   **Slippage Backend**: (Optional) Fully functional with mock data if backend is offline.
+
+### Installation
+
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/sajidmahamud835/slippage-tracker-client.git
+    cd slippage-tracker-client
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **View Application**
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🤝 Related Projects
+
+Explore other components of the research portfolio:
+
+1.  **[MarketSync-EA](../MarketSync-EA)** - The primary data source; the trading bot that generates the execution data.
+2.  **[GridMaster Pro](../grid-master-pro-mt5-ea)** - Another EA where slippage monitoring is critical for profitability.
+3.  **[BankSync](../banksync)** - Related financial dashboarding technology.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+
+**[Sajid Mahamud](https://github.com/sajidmahamud835)**
+
+*Full-Stack Engineer • Trading Systems Architect*
+
+</div>
