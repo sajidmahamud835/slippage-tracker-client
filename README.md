@@ -95,9 +95,9 @@ The client is built using the specific advantages of Next.js 14:
 
 Explore other components of the research portfolio:
 
-1.  **[MarketSync-EA](../MarketSync-EA)** - The primary data source; the trading bot that generates the execution data.
-2.  **[GridMaster Pro](../grid-master-pro-mt5-ea)** - Another EA where slippage monitoring is critical for profitability.
-3.  **[BankSync](../banksync)** - Related financial dashboarding technology.
+1.  **[MarketSync-EA](https://github.com/sajidmahamud835/MarketSync-EA)** - The primary data source; the trading bot that generates the execution data.
+2.  **[GridMaster Pro](https://github.com/sajidmahamud835/grid-master-pro-mt5-ea)** - Another EA where slippage monitoring is critical for profitability.
+3.  **[BankSync](https://github.com/sajidmahamud835/banksync)** - Related financial dashboarding technology.
 
 ---
 
